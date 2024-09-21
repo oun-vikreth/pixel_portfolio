@@ -1,0 +1,191 @@
+/* Custom Styles */
+
+@font-face {
+  font-family: "CustomFont"; /* Your font name */
+  src: url("Baskic8.otf") format("woff2"), url("Baskic8.otf") format("woff"),
+    url("Baskic8.otf") format("truetype"); /* Fallback formats */
+  font-weight: normal;
+  font-style: normal;
+}
+
+#portfolio {
+  background-color: #729762 !important;
+  color: rgb(252, 252, 252);
+}
+
+#portfolio .card {
+  border-radius: 0px; /* Adjust the value to change the roundness of the corners */
+  color: #597445;
+  border-radius: 10px;
+}
+
+#portfolio .card-img-top {
+  max-width: 80%; /* Ensure the image doesn't exceed the card width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
+  background-color: #597445;
+  color: #ffffff;
+}
+
+#home {
+  background: url("images/j4.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/*This is css for pixelet button*/
+
+.pixel-button {
+  font-family: "CustomFont", sans-serif; /* Use the custom font */
+  font-size: 20px; /* Adjust the size to fit the pixel art style */
+  background-color: #597445; /* Dark button background */
+  color: #ffffff; /* Light text color for contrast */
+  border: 4px solid #e7f0dc; /* Red border to make it 'pixelated' */
+  padding: 10px 20px; /* Padding for the button */
+  text-transform: uppercase; /* All caps for a bold look */
+  letter-spacing: 2px; /* Add spacing to enhance pixel art style */
+  box-shadow: 5px 5px 0 #729762; /* Create a shadow effect for the button */
+  cursor: pointer;
+  transition: all 0.1s ease; /* Slight transition for hover effects */
+  border-radius: 10px; /* Adjust the value to change the roundness of the corners */
+}
+
+.pixel-button:hover {
+  box-shadow: 3px 3px 0 #153f17; /* Change shadow on hover */
+  transform: translate(-2px, -2px); /* Slightly move the button up-left */
+}
+
+.pixel-button:active {
+  box-shadow: 1px 1px 0 #36913e; /* Change shadow on click */
+  transform: translate(2px, 2px); /* Move down-right when clicked */
+}
+
+:root {
+  --pixel-bg: rgb(255, 255, 255); /* Inner background color */
+  --pixel-border: black; /* Inner border color */
+  --pixel-border-2: white; /* Middle border color */
+  --pixel-border-3: var(--pixel-border); /* Outer border color */
+  --pixel: 0.125rem; /* Pixel size */
+}
+
+.pixel-border {
+  background: var(--pixel-bg);
+  box-shadow:
+    /* Inner Background Color */ 0 calc(var(--pixel) * -3) 0
+      calc(var(--pixel) * -1) var(--pixel-bg),
+    0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+    0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+    0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+    0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+    0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+    0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+    0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+    /* Pixel Border Layer 1 */ calc(var(--pixel) * -1) 0 0 0 var(--pixel-border),
+    var(--pixel) 0 0 0 var(--pixel-border),
+    0 calc(var(--pixel) * -2) 0 0 var(--pixel-border),
+    0 calc(var(--pixel) * 2) 0 0 var(--pixel-border),
+    0 calc(var(--pixel) * -5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+    0 calc(var(--pixel) * 5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+    0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+    0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+    0 calc(var(--pixel) * -10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+    0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+    0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+    0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+    /* Pixel Border Layer 2 */ calc(var(--pixel) * -2) 0 0 0
+      var(--pixel-border-2),
+    calc(var(--pixel) * 2) 0 0 0 var(--pixel-border-2),
+    0 calc(var(--pixel) * -1) 0 var(--pixel) var(--pixel-border-2),
+    0 var(--pixel) 0 var(--pixel) var(--pixel-border-2),
+    0 calc(var(--pixel) * -4) 0 0 var(--pixel-border-2),
+    0 calc(var(--pixel) * 4) 0 0 var(--pixel-border-2),
+    0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+    0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+    0 calc(var(--pixel) * -8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+    0 calc(var(--pixel) * 8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+    0 calc(var(--pixel) * -11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+    0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+    0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+    0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+    /* Border Layer 3: --pixel-border-3 */ calc(var(--pixel) * -3) 0 0 0
+      var(--pixel-border-3),
+    calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
+    0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
+    0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
+    0 calc(var(--pixel) * 3) 0 var(--pixel) var(--pixel-border-3),
+    0 calc(var(--pixel) * -5) 0 0 var(--pixel-border-3),
+    0 calc(var(--pixel) * 5) 0 0 var(--pixel-border-3),
+    0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+    0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+    0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+    0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+    0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+    0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+    0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6) var(--pixel-border-3),
+    0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6) var(--pixel-border-3);
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  min-height: 150px;
+  margin: auto;
+  background-color: #25252500;
+  overflow: hidden;
+  z-index: 1;
+}
+.m-scroll {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(2);
+  transition: all 1s ease;
+}
+.m-scroll > div {
+  display: flex;
+  animation: scrollText 10s infinite linear;
+}
+
+.m-scroll h1 {
+  margin: 0;
+  margin-right: 150px;
+  font-size: 25px;
+  color: #ffffff;
+  transition: all 2s ease;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
